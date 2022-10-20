@@ -5,8 +5,11 @@
   "projects": {
     "portfolio": {
       "projectType": "application",
-      "schematics": {"@schematics/angular:component": {
-        "style": "scss"},
+      "schematics": {
+        "@schematics/angular:component": {
+        "style": "scss"
+      }
+    },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -24,9 +27,12 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -98,5 +104,11 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
+},
+"cli": {
+  "analytics": false
 }
